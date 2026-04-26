@@ -1,0 +1,11 @@
+body {
+    background-color: grey;
+    font-size: 20px;
+}
+
+#content {
+    max-width: 60%;
+    border: 1px solid darkgrey;
+    margin: 0 auto;
+    padding: 50px;
+}
