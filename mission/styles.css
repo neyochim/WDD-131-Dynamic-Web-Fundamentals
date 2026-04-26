@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    font-size: 20px;
+}
+#content {
+    max-width: 60%;
+    border: 1px solid darkgrey;
+    margin: 40px auto;
+    padding: 50px;
+}
+h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+}
+.name {
+    font-size:.8em;
+    letter-spacing: 5px;
+    color: #035f9c;
+    text-align: center;
+}
+hr {
+    width: 80%;
+    margin-top: -15px;
+}
+.mission {
+    padding-top: 40px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+#methods {
+    max-width: 80%;
+    margin: 0 auto;
+}
+h2 {
+    font-style: italic;
+    font-size: 1em;
+    font-weight: normal;
+    padding-top: 20px;
+    
+}
+.list {
+    list-style: decimal;
+}
+li {
+    padding-bottom: 15px;
+}
+img {
+    width: 20%;
+    display: block;
+    margin: 050px auto;
+}
