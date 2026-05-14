@@ -1,7 +1,8 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: Roboto, sans-serif;
 }
 header,
@@ -21,7 +22,6 @@ section {
   background-color: white;
   margin: 1em;
   border: 1px solid #ccc;
-  min-width: 200px;
 }
 nav a {
     padding: 20px;
@@ -32,7 +32,7 @@ nav a:hover {
     text-decoration: none;
     color: #616061;
 }
-.menu-btn {
+.menu-btn{
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -46,17 +46,41 @@ nav a:hover {
 footer {
     text-align: center;
 }
-@media screen and (min-width: 550px) and (max-width: 849px) {
+.hide a {
+    display: inline-block;
+}
+@media screen and (min-width: 700px) {
     main {
-    display: flex;
-    flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+    .menu-btn {
+        display: none;
     }
-    section {
-        max-width: 300px;
+    nav a {
+        display: inline;
+    }
+    nav {
+        text-align: right;
     }
 }
-@media screen and (min-width: 850px) {
+
+@media screen and (min-width: 1000px) {
     main {
-    display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+.menu-btn {
+    transition: transform 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+}
+
+.change .bar1 {
+  transform: translate(0, 9px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -9px) rotate(45deg);
 }
