@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    border-bottom: 2px solid #d4a373;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 2.1rem;
+    color: #3c2f2f;
+}
+
+nav a {
+    color: #c44d4d;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.post-meta span {
+    margin-right: 15px;
+}
+
+.rating {
+    color: #f4c430;
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #9c2a2a;
+    margin: 15px 0 25px 0;
+}
+
+.book-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.book-cover img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+}
+
+.book-info p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.post-footer {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .book-content {
+        grid-template-columns: 280px 1fr;
+        gap: 40px;
+    }
+    
+    header {
+        padding-bottom: 20px;
+    }
+}
