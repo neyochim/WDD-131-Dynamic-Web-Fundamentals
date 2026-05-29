@@ -34,3 +34,25 @@ console.log(newNames);
 let filteredNames = names.filter((name) => {
     return name[0] === "M";
 });
+
+const numbers = [125, 20, 5];
+
+document.getElementById("output").innerHTML = numbers.reduce(myFunc);
+
+function myFunc(total, num) {
+  return total - num;
+}
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let index = fruits.indexOf("Apple");
+
+const movieSummary = `
+  <div class="movie-summary">
+    <h2>${movie.title}</h2>
+    <p>${movie.genre} - ${stars}</p>
+  </div>
+`;
+
+document.getElementById("movie-list").innerHTML += movieSummary;
+
+const car = {type:"Fiat", model:"500", color:"white"};
