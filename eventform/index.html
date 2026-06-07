@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Form</title>
+    <meta name="description" content="Event ticket registration form for students and guests.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page-shell">
+        <section class="ticket-app" aria-labelledby="page-title">
+            <header class="app-header">
+                <p class="eyebrow">Prove Assignment</p>
+                <h1 id="page-title">Event Ticket</h1>
+                <p class="intro">Sign up for the event and get a generated ticket after a successful submit.</p>
+            </header>
+
+            <form id="ticket-form" class="ticket-form" novalidate>
+                <div class="form-grid two-up">
+                    <label class="field">
+                        <span>First Name</span>
+                        <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+                    </label>
+
+                    <label class="field">
+                        <span>Last Name</span>
+                        <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+                    </label>
+                </div>
+
+                <label class="field">
+                    <span>Email</span>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </label>
+
+                <div class="form-grid two-up">
+                    <label class="field">
+                        <span>Type</span>
+                        <select id="type" name="type" required>
+                            <option value="">Choose one</option>
+                            <option value="student">Student</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>Event Date</span>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </label>
+                </div>
+
+                <div id="type-details" class="type-details" hidden>
+                    <label class="field">
+                        <span id="type-label">Student I#</span>
+                        <input type="text" id="type-code" name="type-code" inputmode="numeric" autocomplete="off">
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-button">Create Ticket</button>
+            </form>
+
+            <section id="errors" class="message-panel error-panel" aria-live="polite" hidden></section>
+            <section id="ticket" class="ticket-preview" aria-live="polite" hidden></section>
+        </section>
+    </main>
+</body>
+</html>

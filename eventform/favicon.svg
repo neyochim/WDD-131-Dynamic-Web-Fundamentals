@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ticket icon">
+  <rect width="64" height="64" rx="14" fill="#c7d8e4"/>
+  <path d="M14 19h36v10a6 6 0 0 0 0 12v10H14V41a6 6 0 0 0 0-12V19Z" fill="#ffffff" stroke="#111111" stroke-width="2.5"/>
+  <path d="M25 24h14M25 32h14M25 40h10" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+</svg>
