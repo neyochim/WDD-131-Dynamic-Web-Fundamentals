@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="RecipeBook is a responsive recipe page featuring apple crisp, a search bar, and social links.">
+	<meta property="og:title" content="RecipeBook">
+	<meta property="og:description" content="A responsive apple crisp recipe page built with flexbox.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://neyochim.github.io/wdd131/recipes/">
+	<meta property="og:image" content="https://neyochim.github.io/wdd131/recipes/assets/social-preview.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="RecipeBook">
+	<meta name="twitter:description" content="A responsive apple crisp recipe page built with flexbox.">
+	<meta name="twitter:image" content="https://neyochim.github.io/wdd131/recipes/assets/social-preview.png">
+	<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+	<link rel="icon" href="./assets/apple-touch-icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
+	<link rel="stylesheet" href="recepie-book.css">
+	<script src="recepie-book.js" defer></script>
+	<title>RecipeBook</title>
+</head>
+<body>
+	<div class="page">
+		<header class="site-header">
+			<img class="brand-mark" src="./assets/recipe-book.png" alt="RecipeBook logo">
+			<h1>RecipeBook</h1>
+		</header>
+
+		<main>
+			<form class="search-form" role="search">
+				<label class="sr-only" for="recipe-search">Find a recipe</label>
+				<input id="recipe-search" name="recipe-search" type="search" placeholder="Find a recipe">
+				<button type="submit" aria-label="Search recipes">
+					<img src="./assets/search.svg" alt="" aria-hidden="true">
+				</button>
+			</form>
+
+			<article class="recipe-card">
+				<img class="recipe-image" src="./assets/apple-crisp.jpg" alt="Apple crisp served with vanilla ice cream">
+				<div class="recipe-details">
+					<span class="recipe-category">dessert</span>
+					<h2>Apple Crisp</h2>
+					<p class="recipe-rating" role="img" aria-label="4 out of 5 stars">⭐⭐⭐⭐☆</p>
+					<p class="recipe-description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+				</div>
+			</article>
+		</main>
+
+		<footer class="site-footer">
+			<p class="attribution">
+				<a href="https://www.flaticon.com/free-icons/recipe">Recipe icons created by Freepik - Flaticon</a>
+			</p>
+			<!-- Social media icons created by AlfredoCreates through Iconfinder. -->
+			<nav class="social-links" aria-label="Social media links">
+				<a href="#" aria-label="YouTube">
+					<img src="./assets/youtube_icon.svg" alt="">
+				</a>
+				<a href="#" aria-label="Instagram">
+					<img src="./assets/instagram_icon.svg" alt="">
+				</a>
+				<a href="#" aria-label="Pinterest">
+					<img src="./assets/pinterest_icon.svg" alt="">
+				</a>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>
