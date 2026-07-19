@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#023047" />
+	<title>Snake</title>
+	<link rel="stylesheet" href="final-project.css" />
+</head>
+
+<body>
+	<div class="page-shell">
+		<main class="layout">
+			<section class="cabinet" aria-labelledby="game-heading">
+				<div class="cabinet__marquee" aria-hidden="true">
+					<span>Snake</span>
+					<span class="cabinet__marquee-light"></span>
+				</div>
+
+				<div class="cabinet__topline">
+					<p class="cabinet__tag">Neon Snake Console</p>
+							<h2 id="game-heading">Survive the grid.</h2>
+				</div>
+
+				<div class="cabinet__stats" aria-label="Game stats">
+					<div>
+						<span class="stat-label">Score</span>
+						<strong data-score>0</strong>
+					</div>
+					<div>
+						<span class="stat-label">Best</span>
+						<strong data-best>0</strong>
+					</div>
+					<div>
+						<span class="stat-label">Status</span>
+						<strong data-status>Stand by</strong>
+					</div>
+				</div>
+
+				<div class="cabinet__layout">
+					<div class="cabinet__machine">
+						<div class="cabinet__screen-shell">
+							<canvas id="gameCanvas" aria-label="Snake game play area" tabindex="0"></canvas>
+							<div class="screen-hud" aria-live="polite">
+								<p data-message>Press Start to wake the cabinet.</p>
+							</div>
+						</div>
+
+						<div class="cabinet__controls">
+							<div class="control-row control-row--primary">
+								<button type="button" class="cabinet-button cabinet-button--accent cabinet-button--start" data-action="start">
+									Start
+								</button>
+								<button type="button" class="cabinet-button" data-action="pause">
+									Pause
+								</button>
+								<label class="difficulty" for="difficulty">
+									<span>Cabinet speed</span>
+									<select id="difficulty">
+										<option value="chill">Chill</option>
+										<option value="arcade" selected>Arcade</option>
+										<option value="turbo">Turbo</option>
+									</select>
+								</label>
+							</div>
+
+							<div class="d-pad" aria-label="Touch controls">
+								<button type="button" class="d-pad__button d-pad__button--up" data-direction="up" aria-label="Move up">▲</button>
+								<button type="button" class="d-pad__button d-pad__button--left" data-direction="left" aria-label="Move left">◀</button>
+								<button type="button" class="d-pad__button d-pad__button--right" data-direction="right" aria-label="Move right">▶</button>
+								<button type="button" class="d-pad__button d-pad__button--down" data-direction="down" aria-label="Move down">▼</button>
+							</div>
+						</div>
+
+						<div class="cabinet__base" aria-hidden="true">
+							<div class="cabinet__feet"></div>
+						</div>
+					</div>
+
+					<aside class="cabinet__menu" aria-label="Game information and controls">
+						<section class="cabinet__menu-card">
+							<h3>How it plays</h3>
+							<p>
+								Guide the snake with arrows, WASD, or the touch pad. Grab food, grow
+								longer, and keep the run going as the speed rises.
+							</p>
+						</section>
+
+						<section class="cabinet__menu-card">
+							<h3>Controls</h3>
+							<ul>
+								<li>Arrow keys or WASD to move</li>
+								<li>Start Game to begin a new run</li>
+								<li>Pause to freeze the cabinet</li>
+								<li>Touch buttons for phones and tablets</li>
+							</ul>
+						</section>
+
+						<section class="cabinet__menu-card">
+							<h3>Goals</h3>
+							<ul>
+								<li>Canvas-based arcade game play</li>
+								<li>Responsive mobile-first layout</li>
+								<li>Live score and status updates</li>
+								<li>DOM events and game logic</li>
+							</ul>
+						</section>
+					</aside>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script src="final-project.js" defer></script>
+</body>
+
+</html>
